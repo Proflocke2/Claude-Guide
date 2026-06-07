@@ -1,61 +1,73 @@
-# 🧠 Claude Master Guide
-
-> **Production-grade reference for Claude API, Prompt Engineering, and Enterprise deployment.**  
-> Based on official Anthropic documentation — updated June 2026.
-
----
-
-## 🌐 Choose Your Language / Sprache wählen
-
 <div align="center">
 
-| 🇬🇧 English | 🇩🇪 Deutsch |
-|:---:|:---:|
-| [**→ English Guide**](./en/README.md) | [**→ Deutscher Guide**](./de/README.md) |
-| Full reference in English | Vollständige Referenz auf Deutsch |
+# 🧠 Claude Ultimate Guide
+
+### *Der komplette Claude-Guide — für Einsteiger und Entwickler*
+
+<br>
+
+[![Everyday](https://img.shields.io/badge/🏠_Alltag-Für_alle-blue?style=for-the-badge)](./everyday/README.md)
+[![Dev](https://img.shields.io/badge/⚙️_Developer-Technisch-orange?style=for-the-badge)](./dev/README.md)
+
+<br>
+
+> Zwei Guides in einem Repo — wähle deinen Einstieg.
 
 </div>
 
 ---
 
-## 📁 Repository Structure
+## 📁 Struktur
 
 ```
-claude-master-guide/
-├── README.md                    ← You are here
-├── en/
-│   ├── README.md                ← English master overview
-│   ├── advanced-prompting.md    ← XML tags, CoT, Structured Outputs
-│   ├── model-matrix.md          ← Opus vs Sonnet vs Haiku decision guide
-│   ├── custom-instructions.md   ← System prompt templates & configs
-│   ├── projects-artifacts.md    ← Projects, context window, Artifacts
-│   └── tools-connectors.md     ← Tool use, MCP, Function Calling
-└── de/
-    ├── README.md                ← Deutscher Gesamtüberblick
-    ├── advanced-prompting.md    ← XML-Tags, CoT, Structured Outputs
-    ├── model-matrix.md          ← Opus vs Sonnet vs Haiku Entscheidungsguide
-    ├── custom-instructions.md   ← System-Prompt-Vorlagen & Configs
-    ├── projects-artifacts.md    ← Projects, Kontextfenster, Artifacts
-    └── tools-connectors.md     ← Tool Use, MCP, Function Calling
+claude-ultimate-guide/
+│
+├── 🏠 /everyday          ← Für alle: Setup, Tricks, Schreibstil, Vorlagen
+│   ├── README.md         ← Startseite mit Sprachauswahl
+│   ├── /de               ← Deutsch: Guide + Vorlagen
+│   └── /en               ← English: Guide + Templates
+│
+└── ⚙️ /dev               ← Für Entwickler: API, Modelle, Tools, MCP
+    ├── README.md         ← Startseite mit Sprachauswahl
+    ├── /de               ← Deutsch: 5 technische Kapitel
+    └── /en               ← English: 5 technical chapters
 ```
 
 ---
 
-## ⚡ Quick Facts — June 2026
+## 🏠 Everyday-Guide — Für alle
 
-| Model | Context | Output | Price (in/out per MTok) |
-|---|---|---|---|
-| `claude-opus-4-8` | 1M tokens | 128K | $5 / $25 |
-| `claude-sonnet-4-6` | 1M tokens | 64K | $3 / $15 |
-| `claude-haiku-4-5` | 200K tokens | 64K | $1 / $5 |
+Kein Tech-Wissen nötig. Direkt einsetzbar.
 
-> ⚠️ **`claude-sonnet-4-20250514` and `claude-opus-4-20250514` retire June 15, 2026.** Hard API failure — no auto-routing.
+| Thema | Inhalt |
+|---|---|
+| ⚙️ Setup | Personal Preferences, Projekte, Skills, Konnektoren |
+| 🧪 Hacks | XML-Tags, tiefes Denken, Format-Kontrolle, Rollen-Trick |
+| ✍️ Schreibstil | KI-Muster eliminieren, Humanizer-Prompts, Voice Matching |
+| 🛡️ Fakten | Halluzinationen verhindern, Fakten-Checker aktivieren |
+
+→ **[Zum Everyday-Guide](./everyday/README.md)**
 
 ---
 
-## 🔗 Official Resources
+## ⚙️ Developer-Guide — Für Entwickler
 
-- [Anthropic Docs](https://docs.claude.com)
-- [Prompt Engineering Overview](https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview)
-- [API Reference](https://platform.claude.com)
-- [Support](https://support.claude.com)
+API-ready. Produktionsreif. Code-Beispiele in Python & JavaScript.
+
+| Kapitel | Inhalt |
+|---|---|
+| 📐 Prompt Engineering | XML-Architektur, CoT, Structured Outputs |
+| 🤖 Modell-Matrix | Opus vs. Sonnet vs. Haiku — Kosten, Latenz, Routing-Code |
+| 📁 Projects & Artifacts | RAG, Storage API, MCP-Artifacts |
+| 📋 System Prompts | 5 produktionsreife Templates, Caching-Pattern |
+| 🔧 Tools & MCP | Tool-Loop, parallele Ausführung, Strict Schemas |
+
+→ **[Zum Developer-Guide](./dev/README.md)**
+
+---
+
+<div align="center">
+
+**Stand: Juni 2026 · Basiert auf offizieller Anthropic-Dokumentation**
+
+</div>
